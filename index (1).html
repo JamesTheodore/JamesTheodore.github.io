@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="widget" id="news-widget">
+            <h2>Latest News</h2>
+            <ul id="news-list"></ul>
+        </div>
+        <div class="widget" id="weather-widget">
+            <h2>Weather</h2>
+            <div id="weather-info"></div>
+        </div>
+        <div class="widget" id="quote-widget">
+            <h2>Quote of the Day</h2>
+            <div id="quote"></div>
+        </div>
+        <div class="widget" id="task-widget">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <div class="widget" id="timer-widget">
+            <h2>Focus Timer</h2>
+            <div id="timer">25:00</div>
+            <button id="start-timer">Start</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

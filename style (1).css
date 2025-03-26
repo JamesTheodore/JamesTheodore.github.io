@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.widget {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.widget:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+#news-list, #task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#news-list li, #task-list li {
+    margin: 10px 0;
+}
+
+#weather-info, #quote, #timer {
+    font-size: 1.5em;
+}
+
+#new-task {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task-button, #start-timer, #reset-timer {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+#add-task-button:hover, #start-timer:hover, #reset-timer:hover {
+    background-color: #0056b3;
+}
