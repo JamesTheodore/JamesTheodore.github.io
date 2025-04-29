@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widget Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Widget Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Widget Dashboard</h1>
-
-        <div class="widgets">
-            <div class="widget" id="weather">
-                <h2>Weather</h2>
-                <p id="weather-data">Loading...</p>
-            </div>
-
-            <div class="widget" id="news">
-                <h2>News</h2>
-                <ul id="news-list">Loading...</ul>
-            </div>
-
-            <div class="widget" id="clock">
-                <h2>Time</h2>
-                <p id="time"></p>
-            </div>
-
-            <div class="widget" id="quote">
-                <h2>Quote</h2>
-                <p id="quote-text">Loading...</p>
-            </div>
+        <div class="widget" id="news-widget">
+            <h2>Latest News</h2>
+            <ul id="news-list"></ul>
         </div>
-
+        <div class="widget" id="weather-widget">
+            <h2>Weather</h2>
+            <div id="weather-info"></div>
+        </div>
+        <div class="widget" id="quote-widget">
+            <h2>Quote of the Day</h2>
+            <div id="quote"></div>
+        </div>
+        <div class="widget" id="task-widget">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <div class="widget" id="timer-widget">
+            <h2>Focus Timer</h2>
+            <div id="timer">25:00</div>
+            <button id="start-timer">Start</button>
+            <button id="reset-timer">Reset</button>
+        </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
